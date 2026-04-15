@@ -1,11 +1,10 @@
 "use client";
 
-import { CheckCircle, Zap, Mail, MessageSquare, Layout, MousePointerClick, ChevronRight } from 'lucide-react';
+import { CheckCircle, Zap, Mail, MessageSquare, Layout, ChevronRight } from 'lucide-react';
 
 export default function LeadloversPresell() {
   
   const irParaOferta = () => {
-    // Seu link de afiliado já configurado aqui:
     const linkAfiliado = "https://go.hotmart.com/R105396120D?ap=f792";
     window.open(linkAfiliado, "_blank");
   };
@@ -30,7 +29,7 @@ export default function LeadloversPresell() {
         </div>
       </nav>
 
-      {/* Hero Section - Foco em Conversão */}
+      {/* Hero Section */}
       <section className="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
         <div className="inline-flex items-center gap-2 bg-red-50 border border-red-100 text-red-700 text-[10px] font-black uppercase tracking-[0.3em] px-5 py-2.5 rounded-full mb-8 shadow-sm">
           <Zap size={14} fill="currentColor" /> Automação de Marketing Oficial
@@ -102,21 +101,33 @@ export default function LeadloversPresell() {
         </div>
       </section>
 
-      {/* Footer CTA Final */}
-      <footer className="bg-slate-900 py-24 text-center px-6">
-        <h2 className="text-white text-4xl md:text-5xl font-black uppercase italic mb-10 tracking-tighter">
-          Pronto para o próximo nível?
-        </h2>
-        <button 
-          onClick={irParaOferta}
-          className="bg-white text-slate-900 text-sm font-black uppercase tracking-[0.2em] px-12 py-6 rounded-[24px] hover:bg-red-600 hover:text-white transition-all shadow-2xl"
-        >
-          Criar Minha Conta Leadlovers
-        </button>
-        <div className="mt-16 pt-8 border-t border-white/5">
-          <p className="text-white/20 text-[10px] font-bold uppercase tracking-[0.4em]">
-            Página de Afiliado Autorizado - 2026
-          </p>
+      {/* Seção Final com Rodapé e Avisos Legais */}
+      <footer className="bg-slate-900 py-20 text-center px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-white text-4xl md:text-5xl font-black uppercase italic mb-10 tracking-tighter">
+            Pronto para o próximo nível?
+          </h2>
+          <button 
+            onClick={irParaOferta}
+            className="bg-white text-slate-900 text-sm font-black uppercase tracking-[0.2em] px-12 py-6 rounded-[24px] hover:bg-red-600 hover:text-white transition-all shadow-2xl mb-16"
+          >
+            Criar Minha Conta Leadlovers
+          </button>
+          
+          <div className="pt-12 border-t border-white/10 text-white/40 text-[11px] font-medium leading-relaxed uppercase tracking-widest">
+            <div className="flex justify-center gap-8 mb-8">
+              <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
+              <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
+              <a href="#" className="hover:text-white transition-colors">Contato</a>
+            </div>
+            
+            <p className="max-w-2xl mx-auto mb-4">
+              &copy; 2026 Leadlovers Oficial - Lucas Gabriel - Afiliado Autorizado.
+            </p>
+            <p className="max-w-3xl mx-auto opacity-50 lowercase">
+              Este site não faz parte do site do Google ou do Facebook Inc. Além disso, este site não é endossado pelo Google ou Facebook de nenhuma maneira. Google Ads e Facebook Ads são marcas comerciais de suas respectivas empresas.
+            </p>
+          </div>
         </div>
       </footer>
     </main>
